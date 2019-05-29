@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
+import Curve from "../../assets/Curve3-01.png";
+// import Nav from "../Nav";
 import Particles from "react-particles-js";
 
 class HomeBody extends Component {
@@ -10,10 +12,11 @@ class HomeBody extends Component {
     render() {
         return (
             <div className="homeContainer">
+                <img className="curve" src={Curve} />
+                <div className="navContainer">HERE WE GO</div>
                 <div className="particleContainer">
                     <Particles
-                        width="500px"
-                        height="800px"
+                        className="reactParticlesContainer"
                         params={{
                             particles: {
                                 number: {
@@ -42,7 +45,7 @@ class HomeBody extends Component {
                                     }
                                 },
                                 size: {
-                                    value: 3,
+                                    value: 4,
                                     random: true,
                                     anim: {
                                         enable: false,
