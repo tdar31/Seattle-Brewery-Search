@@ -1,0 +1,23 @@
+/* pages */
+
+/* Don't remove! */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: "Open Sans";
+    /* Background for all pages */
+    /* background-color: #920000; */
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+}
