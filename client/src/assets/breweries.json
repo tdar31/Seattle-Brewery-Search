@@ -1,0 +1,27 @@
+{
+    "type": "breweryDatabase",
+    "data": [
+        {
+            "reubens": {
+                "name": "Rueben's Brewery",
+                "queryName": "reubens",
+                "address": "5010 14th Ave NW, Seattle, WA 98107",
+                "phoneNumber": "(206) 784-2859",
+                "photoUrl": "http://via.placeholder.com/600x400",
+                "website": "https://www.REE.com",
+                "description": "We're an award winning microbrewery focused on making small batches of top quality ales and lagers. We're family owned and focused on brewing unconstrained to make the best beer possible.",
+                "region": "ballard"
+            },
+            "reubens2": {
+                "name": "Rueben's Brewery",
+                "queryName": "reubens",
+                "address": "5010 14th Ave NW, Seattle, WA 98107",
+                "phoneNumber": "(206) 784-2859",
+                "photoUrl": "http://via.placeholder.com/600x400",
+                "website": "https://www.REE.com",
+                "description": "We're an award winning microbrewery focused on making small batches of top quality ales and lagers. We're family owned and focused on brewing unconstrained to make the best beer possible.",
+                "region": "ballard"
+            }
+        }
+    ]
+}
