@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./style.css";
-import Curve from "../../assets/Curve3-01.png";
-// import Nav from "../Nav";
+import Curve from "../../assets/CurveFinalFinal-01.png";
+import BeerIcon from "../../assets/beer.svg";
 import Particles from "react-particles-js";
+import { Link } from "react-router-dom";
 
 class HomeBody extends Component {
     state = {};
@@ -13,15 +14,33 @@ class HomeBody extends Component {
         return (
             <div className="homeContainer">
                 <img className="curve" src={Curve} />
-                <div className="navContainer">HERE WE GO</div>
+                <img className="beer" src={BeerIcon} />
+                <div className="seattleBrewSearch">
+                    <b>Seattle Brewery Search</b>
+                </div>
+                <div>Welcome</div>
+                <div>Click the button below to take you to the map to get started</div>
+                <div className="navContainer">
+                    {/* <Link to=""> */}
+                    <div className="navLink">Home</div>
+                    {/* </Link> */}
+
+                    <Link to="/">
+                        <a className="navLink">Map</a>
+                    </Link>
+
+                    <Link to="/">
+                        <a className="navLink loginTab">Card View</a>
+                    </Link>
+                </div>
                 <div className="particleContainer">
                     <Particles
                         className="reactParticlesContainer"
                         params={{
                             particles: {
                                 number: {
-                                    value: 150,
-                                    density: { enable: true, value_area: 300 }
+                                    value: 120,
+                                    density: { enable: true, value_area: 200 }
                                 },
                                 color: { value: "#ffffff" },
                                 shape: {
