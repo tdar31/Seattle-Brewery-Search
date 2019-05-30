@@ -47,7 +47,7 @@ class HomeBody extends Component {
                         params={{
                             particles: {
                                 number: {
-                                    value: 120,
+                                    value: 75,
                                     density: { enable: true, value_area: 200 }
                                 },
                                 color: { value: "#ffffff" },
