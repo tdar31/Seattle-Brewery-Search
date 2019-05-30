@@ -12,7 +12,6 @@
 }
 
 .navContainer {
-    /* background-color: #861a1a; */
     width: auto;
     position: fixed;
     display: inline-block;
@@ -46,24 +45,31 @@
 }
 
 .welcomeText {
-    font-size: 116px;
-    margin-top: 40vh;
-    margin-left: 35vw;
+    font-size: 44px;
+    margin-top: 33vh;
+    margin-left: 25vw;
+    width: 50vw;
+    text-align: center;
+    /* background-color: red; */
 }
 
 .descriptionText {
-    margin-top: 60vh;
-    margin-left: 35vw;
+    margin-top: 63vh;
+    margin-left: 30vw;
+    font-weight: bold;
+    text-align: center;
+    width: 40vw;
+    /* background-color: red; */
 }
 
 .mapButton {
-    margin-top: 67vh;
-    margin-left: 45vw;
+    margin-top: 77vh;
+    margin-left: 44vw;
     z-index: 2;
     display: inline-block;
     position: fixed;
     cursor: pointer;
-    padding: 1em 4em;
+    padding: 1em 4vw;
     border-radius: 5px;
     border: 2px solid black;
     box-sizing: border-box;
@@ -78,6 +84,12 @@
 .mapButton:hover {
     color: black;
     background-color: rgba(54, 51, 49, 0.7);
+}
+
+@media only screen and (max-width: 1250px) {
+    .descriptionText {
+        margin-top: 65vh;
+    }
 }
 
 .reactParticlesContainer {
@@ -108,9 +120,6 @@
     -moz-transition: 0.3s;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    /* -moz-box-shadow: inset 0 0 10px #fff;
-    -webkit-box-shadow: inset 0 0 10px #fff;
-    box-shadow: inset 0 0 10px #fff; */
 }
 
 .navLink:active {

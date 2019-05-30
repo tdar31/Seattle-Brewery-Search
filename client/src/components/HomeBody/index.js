@@ -18,13 +18,16 @@ class HomeBody extends Component {
                 <div className="seattleBrewSearch">
                     <b>>Seattle Brewery Search</b>
                 </div>
-                <div className="welcomeText bodyText">Welcome</div>
+                <div className="welcomeText bodyText">
+                    Need some help finding where to drink in the Emerald City?
+                </div>
                 <div className="descriptionText bodyText">
                     Click the button below to take you to the map to get started
                 </div>
                 <Link to="/map">
                     <button className="mapButton bodyText">Enter</button>
                 </Link>
+
                 <div className="navContainer">
                     {/* <Link to=""> */}
                     <div className="navLink">Home</div>
