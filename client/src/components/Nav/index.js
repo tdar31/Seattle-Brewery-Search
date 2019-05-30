@@ -1,28 +1,30 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import BeerIcon from "../../assets/beer.svg";
 
 function Nav() {
     return (
-        <nav className="navContainer">
-            {/* <img
-                className="logoWhite"
-                src={process.env.PUBLIC_URL + "/images/logoWhite.svg"}
-            /> */}
+        <nav className="nonLandingPageContainer">
+            <img className="beer" src={BeerIcon} />
 
-            <div className="spacer" />
+            <div className="seattleBrewSearch">
+                <b>>Seattle Brewery Search</b>
+            </div>
 
-            <Link to="/">
-                <a className="navLink">Home</a>
-            </Link>
+            <div className="navContainer">
+                <Link to="/">
+                    <a className="navLink">Home</a>
+                </Link>
 
-            <Link to="/">
-                <a className="navLink">Map</a>
-            </Link>
+                <Link to="/map">
+                    <a className="navLink">Map</a>
+                </Link>
 
-            <Link to="/">
-                <a className="navLink loginTab">Card View</a>
-            </Link>
+                <Link to="/cards">
+                    <a className="navLink loginTab">Card View</a>
+                </Link>
+            </div>
         </nav>
     );
 }

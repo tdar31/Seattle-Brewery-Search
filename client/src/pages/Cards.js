@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-// import HomeBody from "../components/HomeBody";
+// import CardsBody from "../components/CardsBody";
+import Nav from "../components/Nav";
 import "./style.css";
 
 class Cards extends Component {
@@ -9,6 +10,7 @@ class Cards extends Component {
         return (
             <div>
                 {/* <CardsBody /> */}
+                <Nav />
                 <div>REE Cards PAGE</div>
             </div>
         );

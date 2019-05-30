@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-// import HomeBody from "../components/HomeBody";
+// import MapBody from "../components/MapBody";
+import Nav from "../components/Nav";
 import "./style.css";
 
 class Map extends Component {
@@ -9,6 +10,7 @@ class Map extends Component {
         return (
             <div>
                 {/* <MapBody /> */}
+                <Nav />
                 <div>REE MAP PAGE</div>
             </div>
         );
