@@ -2,10 +2,13 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import BeerIcon from "../../assets/beer.svg";
+import Curve from "../../assets/CurveFinalFinal-01.png";
 
 function Nav() {
     return (
         <nav className="nonLandingPageContainer">
+            <img className="curve" src={Curve} />
+
             <img className="beer" src={BeerIcon} />
 
             <div className="seattleBrewSearch">

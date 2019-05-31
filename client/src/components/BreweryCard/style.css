@@ -1,0 +1,42 @@
+.breweryCard {
+    height: 265px;
+    width: 250px;
+    background-color: red;
+    border-radius: 8px;
+    overflow: auto;
+    margin: 50px;
+    display: inline-block;
+}
+
+.brewIcon {
+    height: 75px;
+    width: 75px;
+    background-color: coral;
+    border-radius: 8px;
+    margin-left: 87.5px;
+    margin-top: 25px;
+}
+
+.brewName {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.brewAddress {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.gMapsLogo {
+    height: 45px;
+    width: 45px;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+
+.webLogo {
+    height: 45px;
+    width: 45px;
+    margin-left: 115px;
+    margin-top: 35px;
+}

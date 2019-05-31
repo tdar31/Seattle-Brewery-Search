@@ -21,3 +21,8 @@ a {
     outline: 0;
     text-decoration: none;
 }
+
+.cardContainer {
+    display: inline-block;
+    background-color: aqua;
+}
