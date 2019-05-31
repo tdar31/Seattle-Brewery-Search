@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 // import CardsBody from "../components/CardsBody";
 import Nav from "../components/Nav";
-import BreweryCard from "../components/BreweryCard";
+// import BreweryCard from "../components/BreweryCard";
 import "./style.css";
+import API from "../utils/API";
 
 class Cards extends Component {
     state = {};
+
+    componentWillMount() {
+        API.getBreweryData()
+            .then(res => {
+                console.log("res: ", res);
+            })
+            .catch(err => console.log(err));
+    }
 
     render() {
         return (
@@ -14,29 +23,9 @@ class Cards extends Component {
                 <Nav />
                 <div className="sideSpace" />
                 <div className="cardContainer">
-                    <div>REE</div>
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
-                    <BreweryCard />
+                    {/* {this.state.selectedPlayerData.map((playerData, index) => (
+                        <BreweryCard key={index} />
+                    ))} */}
                 </div>
                 <div className="sideSpace" />
             </div>
