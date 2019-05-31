@@ -12,7 +12,9 @@ class Cards extends Component {
             <div>
                 {/* <CardsBody /> */}
                 <Nav />
+                <div className="sideSpace" />
                 <div className="cardContainer">
+                    <div>REE</div>
                     <BreweryCard />
                     <BreweryCard />
                     <BreweryCard />
@@ -36,6 +38,7 @@ class Cards extends Component {
                     <BreweryCard />
                     <BreweryCard />
                 </div>
+                <div className="sideSpace" />
             </div>
         );
     }

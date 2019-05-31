@@ -23,6 +23,15 @@ a {
 }
 
 .cardContainer {
+    text-align: center;
     display: inline-block;
     background-color: aqua;
+    width: 80vw;
+    padding-top: 25px;
+}
+
+.sideSpace {
+    background-color: aqua;
+    display: inline-block;
+    width: 10vw;
 }

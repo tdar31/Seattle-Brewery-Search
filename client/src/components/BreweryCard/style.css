@@ -4,7 +4,7 @@
     background-color: red;
     border-radius: 8px;
     overflow: auto;
-    margin: 50px;
+    margin: 25px;
     display: inline-block;
 }
 
@@ -30,7 +30,6 @@
 .gMapsLogo {
     height: 45px;
     width: 45px;
-    margin-left: 25px;
     margin-top: 35px;
 }
 
