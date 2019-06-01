@@ -3,10 +3,21 @@ import React, { Component } from "react";
 import Nav from "../components/Nav";
 import "./style.css";
 import API from "../utils/API";
+import GoogleMapReact from "google-map-react";
+// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Map extends Component {
+    static defaultProps = {
+        center: {
+            lat: 47.6062,
+            lng: -122.3321
+        },
+        zoom: 11
+    };
+
     state = {
-        brewData: []
+        brewData: [],
+        keyGMAPS: process.env.GMAPSAPI
     };
 
     componentWillMount() {
@@ -17,10 +28,7 @@ class Map extends Component {
                         brewData: res.data
                     },
                     function() {
-                        console.log(
-                            "this.state.brewData: ",
-                            this.state.brewData
-                        );
+                        console.log("this.state.brewData: ", this.state);
                     }
                 );
             })
@@ -30,9 +38,29 @@ class Map extends Component {
     render() {
         return (
             <div>
-                {/* <MapBody /> */}
                 <Nav />
-                <div>REE MAP PAGE</div>
+                <div className="sideSpace" />
+                <div
+                    className="mapContainer"
+                    style={{ height: "85vh", width: "55vw" }}
+                >
+                    <GoogleMapReact
+                        bootstrapURLKeys={{
+                            // key: process.env.gMapsAPI
+                            key: this.state.keyGMAPS
+                        }}
+                        defaultCenter={this.props.center}
+                        defaultZoom={this.props.zoom}
+                    >
+                        {/* <AnyReactComponent
+                            lat={47.6062}
+                            lng={-122.3321}
+                            text="My Marker"
+                        /> */}
+                    </GoogleMapReact>
+                </div>
+                <div className="brewCardContainer" />
+                <div className="sideSpace" />
             </div>
         );
     }

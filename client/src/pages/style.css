@@ -40,3 +40,14 @@ a {
     display: inline-block;
     width: 10vw;
 }
+
+.mapContainer {
+    display: inline-block;
+}
+
+.brewCardContainer {
+    display: inline-block;
+    width: 20vw;
+    height: 85vh;
+    background-color: aqua;
+}
