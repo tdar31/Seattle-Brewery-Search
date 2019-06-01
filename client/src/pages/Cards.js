@@ -1,31 +1,47 @@
 import React, { Component } from "react";
-// import CardsBody from "../components/CardsBody";
 import Nav from "../components/Nav";
-// import BreweryCard from "../components/BreweryCard";
+import BreweryCard from "../components/BreweryCard";
 import "./style.css";
 import API from "../utils/API";
 
 class Cards extends Component {
-    state = {};
+    state = {
+        brewData: []
+    };
 
     componentWillMount() {
         API.getBreweryData()
             .then(res => {
-                console.log("res: ", res);
+                this.setState(
+                    {
+                        brewData: res.data
+                    },
+                    function() {
+                        console.log(
+                            "this.state.brewData: ",
+                            this.state.brewData
+                        );
+                    }
+                );
             })
             .catch(err => console.log(err));
     }
 
     render() {
         return (
-            <div>
-                {/* <CardsBody /> */}
+            <div className="cardBody">
                 <Nav />
                 <div className="sideSpace" />
                 <div className="cardContainer">
-                    {/* {this.state.selectedPlayerData.map((playerData, index) => (
-                        <BreweryCard key={index} />
-                    ))} */}
+                    {this.state.brewData.map((breweryData, index) => (
+                        <BreweryCard
+                            key={index}
+                            breweryName={breweryData.name}
+                            // brewIcon={breweryData.}
+                            // breweryGMaps={breweryData.}
+                            breweryWebsite={breweryData.website}
+                        />
+                    ))}
                 </div>
                 <div className="sideSpace" />
             </div>

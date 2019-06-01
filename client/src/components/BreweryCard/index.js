@@ -1,20 +1,21 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import BeerIcon1 from "../../assets/beer(1).svg";
 import gMapsLogo from "../../assets/GoogleMapsLogo.svg";
 import webLogo from "../../assets/earth-globe.svg";
 
-function BreweryCard({}) {
+function BreweryCard({ breweryName, breweryWebsite }) {
     return (
         <div className="breweryCard">
-            <div className="brewIcon" />
-            <div className="brewName">Brewery NameBrewery NameBrewery Name</div>
+            <img className="brewIcon" src={BeerIcon1}/>
+            <div className="brewName">{breweryName}</div>
             <Link to="/">
                 <img className="gMapsLogo" src={gMapsLogo} />
             </Link>
-            <Link to="/">
+            <a href={breweryWebsite} target="_blank">
                 <img className="webLogo" src={webLogo} />
-            </Link>
+            </a>
         </div>
     );
 }

@@ -1,25 +1,28 @@
 .breweryCard {
     height: 265px;
     width: 250px;
-    background-color: red;
+    background-color: #f2f2f2;
     border-radius: 8px;
     overflow: auto;
     margin: 25px;
     display: inline-block;
+    -moz-box-shadow: 0 0 15px #222222;
+    -webkit-box-shadow: 0 0 15px #222222;
+    box-shadow: 0 0 15px #222222;
 }
 
 .brewIcon {
     height: 75px;
     width: 75px;
-    background-color: coral;
+    /* background-color: coral; */
     border-radius: 8px;
-    margin-left: 87.5px;
+    /* margin-left: 87.5px; */
     margin-top: 25px;
 }
 
 .brewName {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .brewAddress {

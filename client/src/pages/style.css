@@ -13,6 +13,7 @@
 
 body {
     font-family: "Open Sans";
+    background-color: #363331;
     /* Background for all pages */
     /* background-color: #920000; */
 }
@@ -22,16 +23,20 @@ a {
     text-decoration: none;
 }
 
+.cardBody {
+    background-color: #363331;
+    height: auto;
+}
+
 .cardContainer {
     text-align: center;
     display: inline-block;
-    background-color: aqua;
+    background-color: #363331;
     width: 80vw;
     padding-top: 25px;
 }
 
 .sideSpace {
-    background-color: aqua;
     display: inline-block;
     width: 10vw;
 }
