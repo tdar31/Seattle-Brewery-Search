@@ -4,6 +4,9 @@ import MapBrewCard from "../components/MapBrewCard";
 import "./style.css";
 import API from "../utils/API";
 import GoogleMapReact from "google-map-react";
+import Marker from "../components/Marker/Marker.jsx";
+import shouldPureComponentUpdate from "react-pure-render/function";
+const MarkerTest = ({ text }) => <div>{text}</div>;
 
 class Map extends Component {
     static defaultProps = {
@@ -14,9 +17,10 @@ class Map extends Component {
         zoom: 11
     };
 
+    shouldComponentUpdate = shouldPureComponentUpdate;
+
     state = {
         brewData: []
-        // keyGMAPS: process.env.REACT_APP_GMAPSAPI
     };
 
     componentWillMount() {
@@ -25,10 +29,11 @@ class Map extends Component {
                 this.setState(
                     {
                         brewData: res.data
-                    },
-                    function() {
-                        console.log("this.state: ", this.state);
                     }
+                    // ,
+                    // function() {
+                    //     console.log("this.state: ", this.state);
+                    // }
                 );
             })
             .catch(err => console.log(err));
@@ -44,21 +49,25 @@ class Map extends Component {
                     style={{ height: "85vh", width: "55vw" }}
                 >
                     <GoogleMapReact
-                        bootstrapURLKeys={
-                            {
-                                // No this is not a mistake the API key is suppose to be exposed. You cannot use enviroment variables to hide it
-                                // https://stackoverflow.com/questions/1364858/what-steps-should-i-take-to-protect-my-google-maps-api-key
-                                // key: "AIzaSyDX6dNHTuVmhjdNOpff1FQk500tcdpQ1Eo"
-                            }
-                        }
+                        bootstrapURLKeys={{
+                            key: "AIzaSyDX6dNHTuVmhjdNOpff1FQk500tcdpQ1Eo"
+                            // No this is not a mistake.  The API key is suppose to be exposed. You cannot use enviroment variables to hide it
+                            // https://stackoverflow.com/questions/1364858/what-steps-should-i-take-to-protect-my-google-maps-api-key
+                        }}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
-                        {/* <AnyReactComponent
-                            lat={47.6062}
-                            lng={-122.3321}
-                            text="My Marker"
+                        {/* This has no CSS just passes the text down as a Prop */}
+                        {/* <MarkerTest
+                            lat={47.6638908}
+                            lng={-122.3771086}
+                            text="Peddler"
                         /> */}
+                        <Marker
+                            lat={47.6638908}
+                            lng={-122.3771086}
+                            text="Peddler"
+                        />
                     </GoogleMapReact>
                 </div>
                 <div className="brewCardContainer">

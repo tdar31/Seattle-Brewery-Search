@@ -11,14 +11,14 @@
     /* -moz-box-shadow: 0 0 3px #222222;
     -webkit-box-shadow: 0 0 3px #222222;
      */
-    /* box-shadow: inset 7px 0 9px -7px #333333; */
+    box-shadow: inset 7px 0 9px -7px #333333;
     display: flex;
     align-items: center;
     border-bottom: 1px black solid;
 }
 
 .mapBrewCard:hover {
-    background-color: #e4e4e4;
+    background-color: #e6e6e6;
 }
 
 .mapBrewIcon {
