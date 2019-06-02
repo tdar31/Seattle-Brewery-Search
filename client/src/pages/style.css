@@ -43,11 +43,18 @@ a {
 
 .mapContainer {
     display: inline-block;
+    margin-top: 20px;
 }
 
 .brewCardContainer {
+    overflow-y: auto;
+    vertical-align: top;
     display: inline-block;
     width: 20vw;
+    margin-top: 20px;
     height: 85vh;
-    background-color: aqua;
+    background-color: #b3b3b3;
+    box-shadow: inset 7px 0 15px -7px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 5px 5px 0px;
+    text-align:center;
 }

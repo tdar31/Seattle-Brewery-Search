@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-// import MapBody from "../components/MapBody";
 import Nav from "../components/Nav";
+import MapBrewCard from "../components/MapBrewCard";
 import "./style.css";
 import API from "../utils/API";
 import GoogleMapReact from "google-map-react";
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class Map extends Component {
     static defaultProps = {
@@ -16,8 +15,8 @@ class Map extends Component {
     };
 
     state = {
-        brewData: [],
-        keyGMAPS: process.env.GMAPSAPI
+        brewData: []
+        // keyGMAPS: process.env.REACT_APP_GMAPSAPI
     };
 
     componentWillMount() {
@@ -28,7 +27,7 @@ class Map extends Component {
                         brewData: res.data
                     },
                     function() {
-                        console.log("this.state.brewData: ", this.state);
+                        console.log("this.state: ", this.state);
                     }
                 );
             })
@@ -45,10 +44,13 @@ class Map extends Component {
                     style={{ height: "85vh", width: "55vw" }}
                 >
                     <GoogleMapReact
-                        bootstrapURLKeys={{
-                            // key: process.env.gMapsAPI
-                            key: this.state.keyGMAPS
-                        }}
+                        bootstrapURLKeys={
+                            {
+                                // No this is not a mistake the API key is suppose to be exposed. You cannot use enviroment variables to hide it
+                                // https://stackoverflow.com/questions/1364858/what-steps-should-i-take-to-protect-my-google-maps-api-key
+                                // key: "AIzaSyDX6dNHTuVmhjdNOpff1FQk500tcdpQ1Eo"
+                            }
+                        }
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
@@ -59,7 +61,19 @@ class Map extends Component {
                         /> */}
                     </GoogleMapReact>
                 </div>
-                <div className="brewCardContainer" />
+                <div className="brewCardContainer">
+                    {/* <MapBrewCard /> */}
+                    {this.state.brewData.map((breweryData, index) => (
+                        <MapBrewCard
+                            key={index}
+                            breweryName={breweryData.name}
+                            // brewIcon={breweryData.}
+                            // breweryGMaps={breweryData.}
+                            breweryWebsite={breweryData.website}
+                        />
+                    ))}
+                </div>
+
                 <div className="sideSpace" />
             </div>
         );

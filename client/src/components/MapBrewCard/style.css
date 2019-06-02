@@ -1,0 +1,50 @@
+.mapBrewCard {
+    height: 80px;
+    width: 100%;
+    /* background-image: linear-gradient(#fdfdfd, #f2f2f2); */
+    background-color: #f2f2f2;
+    /* white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word; */
+    /* -moz-box-shadow: 0 0 3px #222222;
+    -webkit-box-shadow: 0 0 3px #222222;
+     */
+    /* box-shadow: inset 7px 0 9px -7px #333333; */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.mapBrewCard:hover {
+    background-color: #e4e4e4;
+}
+
+.mapBrewIcon {
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    border: 2px #333333 solid;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 25px;
+    background-color: #c9c9c9;
+}
+
+.mapBrewName {
+    vertical-align: top;
+    display: inline-block;
+    width: 60%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.webBrewLogo {
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
