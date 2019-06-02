@@ -1,23 +1,22 @@
-import React, {Component} from 'react';
-import shouldPureComponentUpdate from 'react-pure-render/function';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import shouldPureComponentUpdate from "react-pure-render/function";
 
-import {MarkerStyles} from './MarkerStyles.js';
+import { MarkerStyles, MarkerStylesHover } from "./MarkerStyles.js";
 
 export default class Marker extends Component {
-// Pretty sure this is deprecated in React but leaving it commented out since the example used it
-//   static propTypes = {
-//     text: PropTypes.string
-//   };
+    static propTypes = {
+        $hover: PropTypes.bool,
+        text: PropTypes.string
+    };
 
-//   static defaultProps = {};
+    static defaultProps = {};
 
-  shouldComponentUpdate = shouldPureComponentUpdate;
+    shouldComponentUpdate = shouldPureComponentUpdate;
 
-  render() {
-    return (
-       <div style={MarkerStyles}>
-          {this.props.text}
-       </div>
-    );
-  }
+    render() {
+        const style = this.props.$hover ? MarkerStylesHover : MarkerStyles;
+
+        return <div style={style}>{this.props.text}</div>;
+    }
 }
