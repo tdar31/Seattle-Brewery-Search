@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import shouldPureComponentUpdate from "react-pure-render/function";
-
-import { MarkerStyles, MarkerStylesHover } from "./MarkerStyles.js";
+import "./style.css";
+import { Link } from "react-router-dom";
+import gMapsBubbleLogo from "../../assets/GoogleMapsLogo.svg";
 
 export default class Marker extends Component {
     static propTypes = {
@@ -12,11 +12,24 @@ export default class Marker extends Component {
 
     static defaultProps = {};
 
-    shouldComponentUpdate = shouldPureComponentUpdate;
-
     render() {
-        const style = this.props.$hover ? MarkerStylesHover : MarkerStyles;
+        return (
+            // <div className="bubbleMarker">{this.props.text}</div>
+            <div>
+                <div class="speech-bubble">
+                    <strong className="bubbleText">{this.props.text}</strong>
+                    <Link to="/">
+                        <img
+                            className="gMapsBubbleLogo"
+                            src={gMapsBubbleLogo}
+                        />
+                    </Link>
+                </div>
 
-        return <div style={style}>{this.props.text}</div>;
+                {/* <a href="#" target="_blank">
+                    <img className="webLogo" src="" />
+                </a> */}
+            </div>
+        );
     }
 }

@@ -11,7 +11,8 @@ const brewerySchema = new Schema({
     description: String,
     region: String,
     latitude: String,
-    longitude: String
+    longitude: String,
+    googleMapsLink: String
 });
 
 const Brewery = mongoose.model("Brewery", brewerySchema);
