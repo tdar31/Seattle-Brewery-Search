@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Nav from "../components/Nav";
-import MapBrewCard from "../components/MapBrewCard";
 import "./style.css";
 import API from "../utils/API";
 import GoogleMapReact from "google-map-react";
-import Marker from "../components/Marker/Marker.jsx";
+import Marker from "../components/Marker/Marker.js";
+import FilterButtons from "../components/FilterButtons";
 
 class Map extends Component {
     static defaultProps = {
@@ -12,10 +12,11 @@ class Map extends Component {
             lat: 47.6062,
             lng: -122.3321
         },
-        zoom: 12
+        zoom: 13
     };
 
     state = {
+        brewDataMaster: [],
         brewData: []
     };
 
@@ -24,10 +25,11 @@ class Map extends Component {
             .then(res => {
                 this.setState(
                     {
+                        brewDataMaster: res.data,
                         brewData: res.data
                     },
                     function() {
-                        console.log("this.state: ", this.state);
+                        // this.filterCheck();
                     }
                 );
             })
@@ -38,11 +40,14 @@ class Map extends Component {
         return (
             <div>
                 <Nav />
-                <div className="sideSpace" />
-                <div
-                    className="mapContainer"
-                    style={{ height: "85vh", width: "55vw" }}
-                >
+                {/* <div className="sideSpace" /> */}
+                <div className="mapContainer">
+                    {/* {this.state.brewData.map((breweryData, index) => (
+                        <FilterButtons
+                            key={index}
+                            breweryRegion={breweryData.region}
+                        />
+                    ))} */}
                     <GoogleMapReact
                         bootstrapURLKeys={
                             {
@@ -57,20 +62,20 @@ class Map extends Component {
                         {/* <Marker
                             lat={"47.580335"}
                             lng={"-122.406805"}
-                            text="Peddler"
+                            text="Pedfdsafsddler"
                         /> */}
                         {this.state.brewData.map((breweryData, index) => (
                             <Marker
                                 key={index}
-                                text={breweryData.name}
+                                breweryName={breweryData.name}
                                 lat={breweryData.latitude}
                                 lng={breweryData.longitude}
-                                // breweryWebsite={breweryData.website}
+                                breweryWebsite={breweryData.website}
                             />
                         ))}
                     </GoogleMapReact>
                 </div>
-                <div className="brewCardContainer">
+                {/* <div className="brewCardContainer">
                     {this.state.brewData.map((breweryData, index) => (
                         <MapBrewCard
                             key={index}
@@ -80,9 +85,9 @@ class Map extends Component {
                             breweryWebsite={breweryData.website}
                         />
                     ))}
-                </div>
+                </div> */}
 
-                <div className="sideSpace" />
+                {/* <div className="sideSpace" /> */}
             </div>
         );
     }

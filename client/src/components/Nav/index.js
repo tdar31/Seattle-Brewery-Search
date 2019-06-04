@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import Curve from "../../assets/Three-01.png";
 import BeerIcon from "../../assets/beer.svg";
-import Curve from "../../assets/CurveFinalFinal-01.png";
 
 function Nav() {
     return (

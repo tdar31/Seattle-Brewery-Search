@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import Curve from "../../assets/CurveFinalFinal-01.png";
+import Curve from "../../assets/Three-01.png";
 import BeerIcon from "../../assets/beer.svg";
 import Particles from "react-particles-js";
 import { Link } from "react-router-dom";

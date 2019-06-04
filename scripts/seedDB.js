@@ -5,7 +5,6 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/seattle-brewery-searchDB"
 );
 
-// ADD WEBSITE DOOOOOOD
 // ADD ELYSIAN REEE
 
 const brewerySeed = [
@@ -18,7 +17,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We're an award winning microbrewery focused on making small batches of top quality ales and lagers. We're family owned and focused on brewing unconstrained to make the best beer possible.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.665499",
         longitude: "-122.3734178",
         googleMapsLink: "https://goo.gl/maps/vYdLvvNAF1uHXSgo8"
@@ -32,7 +31,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Stoup's beers are beautifully balanced from start to finish, which makes sense given certified-Cicerone Robyn Schumacher's contributions to the team. Stoup's best bets are the award-winning robust porter, excellent year-round, and the sour Berliner Weisse with a shot of flavored syrup.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6666957",
         longitude: "-122.3712666",
         googleMapsLink: "https://goo.gl/maps/vwXg7aGNYMH8AkbG7"
@@ -46,7 +45,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Co-founders Peter Charbonnier and Amy Besunder started Populuxe Brewing in 2012. Peter had been a home brewer for many years and as his brewing equipment began to outgrow their garage, they began to seek out a commercial space.They found a slightly larger garage within two blocks of their longtime home in Ballard and after 8 months of rushing home after work to do demo and construction, filling out paperwork with various government agencies, piecing together furnishings and basically DYI'ing together a brewery, they opened the doors to their nanobrewery.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6645356",
         longitude: "-122.3676272",
         googleMapsLink: "https://goo.gl/maps/QCGUQ4PpFVgsXdkt9"
@@ -60,7 +59,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Obec Brewing is a 10 barrel brewery and taproom located in the Ballard neighborhood of Seattle. Our personal brewing style is rooted in the history and tradition of beercraft - a lot of great beers have come before us, and we appreciate the tradition and artistry that created them.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6666715",
         longitude: "-122.372607",
         googleMapsLink: "https://goo.gl/maps/y9X1NCmGGEX4iKTf9"
@@ -73,7 +72,7 @@ const brewerySeed = [
         phoneNumber: "(206) 784-2230",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Lagunitas description",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6645123",
         longitude: "-122.3786792",
         googleMapsLink: "https://goo.gl/maps/eYkDvqx1MBEhTnML6"
@@ -87,7 +86,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Pint-size brewery & taproom crafting traditional & creative beers in unassuming surrounds.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6642017",
         longitude: "-122.3785993",
         googleMapsLink: "https://goo.gl/maps/2ZdG49GAcWKbKdzt9"
@@ -101,7 +100,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Pint-size brewery & taproom crafting traditional & creative beers in unassuming surrounds.",
-        region: "hillman city",
+        region: "Hillman city",
         latitude: "47.5507862",
         longitude: "-122.2770957",
         googleMapsLink: "https://goo.gl/maps/eENUyBtHieVnC4wK6"
@@ -115,9 +114,9 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Lucky Envelope’s brewing philosophy is centered around “Culturally Inspired Beer” whose recipes draw from modern and historic brewing styles and techniques. In addition, Lucky Envelope also uses both traditional and non-traditional ingredients in our beers which range from traditional IPAs (ENIAC Mosaic IPA), to German-style lagers (Helles Lager), to seasonal favorites like our Two Pepper Pale Ale (Habanero & Shishito peppers) and Peanut Butter Cream Stout.",
-        region: "ballard",
-        latitude: "47.664914",
-        longitude: "-122.3691629",
+        region: "Ballard",
+        latitude: "47.664855",
+        longitude: "-122.369111",
         googleMapsLink: "https://goo.gl/maps/D6XiqSPrkwygfxYE9"
     },
     {
@@ -128,7 +127,7 @@ const brewerySeed = [
         phoneNumber: "(206) 782-6181",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Maritime Pacific Brewing Company Description",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6626948",
         longitude: "-122.3718135",
         googleMapsLink: "https://goo.gl/maps/YJaGLEGC6ca2Bd5z5"
@@ -142,7 +141,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Peddler Brewing Company is a microbrewery with a tasting room and large beer garden located in the Ballard neighborhood of Seattle, WA. At Peddler, we strive to be a gathering place for beer lovers and support bicycling as an awesome way to get around our beautiful city. Owners Haley and Dave Keller spend their time making and selling beer, advocating for cycling, and riding bikes, so in a word, they’re Peddlers.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6638908",
         longitude: "-122.3771086",
         googleMapsLink: "https://goo.gl/maps/mZPVR21US4rL9owK6"
@@ -156,7 +155,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Bad Jimmy's Brewing Co. is made up of 4 beer lovers who met in Seattle. Individually, our love for craft beer has been intense as long as we can remember.  Together we are committed to the love we share for the brand that we created. It is our mission to ensure that Bad Jimmy's Brewing Co. consistently offers the most innovative creations when it comes to craft beer. We love our beer. We want to share our love with you.  We know that the quality of our product is, and always will be a direct reflection of  the high standards we are committed to, and what we will be remembered by.  Our mission is to reinvent intensity as it exists in the craft beer world.  We will do this with creative combinations of the highest quality ingredients for which we see no substitute.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6603716",
         longitude: "-122.3654518",
         googleMapsLink: "https://goo.gl/maps/39U5nD6UtYy8TomA9"
@@ -170,7 +169,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "A favorite phrase around Hale’s is, “the main thing is to keep the main thing the main thing.” And, of course, THE “Main Thing” here is making great beer in the brewery and serving great food and drink in the pub. The original vision, in 1983, for Hale’s Ales was to produce world-class ales, by the use of traditional English methods, using locally sourced natural ingredients, and to deliver the finished ales to local beer lovers as absolutely fresh as possible. That vision and mission remains unchanged today.",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.6590219",
         longitude: "-122.3653014",
         googleMapsLink: "https://goo.gl/maps/puMTkvqU5Umf4wbg8"
@@ -184,7 +183,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Founded in 2012, we’ve been skillfully crafting and serving some of most flavorful and balanced ales and lagers you’ll find anywhere. In our massive, family-friendly taproom, we also offer a delicious menu prepared onsite that is full of new American classics and specials created daily from scratch to pair with our delicious beer.",
-        region: "bellevue",
+        region: "Bellevue",
         latitude: "47.6265907",
         longitude: "-122.1663319",
         googleMapsLink: "https://goo.gl/maps/DFFVik2vZgBBDcCZ9"
@@ -198,7 +197,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Founded in 2012, we’ve been skillfully crafting and serving some of most flavorful and balanced ales and lagers you’ll find anywhere. In our massive, family-friendly taproom, we also offer a delicious menu prepared onsite that is full of new American classics and specials created daily from scratch to pair with our delicious beer.",
-        region: "belltown",
+        region: "Belltown",
         latitude: "47.6115351",
         longitude: "-122.3453608",
         googleMapsLink: "https://goo.gl/maps/uGdySJd9RpT4kkk19"
@@ -211,7 +210,7 @@ const brewerySeed = [
         phoneNumber: "(206) 622-6044",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "The Pike Brewing Company description",
-        region: "belltown",
+        region: "Belltown",
         latitude: "47.6082256",
         longitude: "-122.3398576",
         googleMapsLink: "https://goo.gl/maps/648BVAUNWJHsm2VE7"
@@ -239,7 +238,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "After moving to Seattle from Buffalo NY and after 18 years in the Telecom industry selling products to T-Mobile, I've finally decided to do what I'm passionate about. Charlie (my coonhound) and I have been downtown Bothell resident's for about 10 years now and after looking at commercial properties around Main Street for about 5, we have finally found our home on 101st Ave NE. You might have seen Charlie chasing squirrels around the Bothell cemetery on nice days, but what most of my neighbors might not know is that I have a crazy passion about beer. Not only do I have a 3 tap kegerator in my man cave with a Nitro tap that buddies enjoy, I pride myself on pouring each beer the way that it's meant to be served- from the amount of pressure used for each keg to the glass that the beer is meant to be served in. Each keg that we have at the shop- all 14 of them- have their own regulator and individual pressure gage- the way that it should be.",
-        region: "bothell",
+        region: "Bothell",
         latitude: "47.7598734",
         longitude: "-122.2053794",
         googleMapsLink: "https://goo.gl/maps/6N8bNEePMKXPSvyH7"
@@ -253,7 +252,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "In 1981, Redhook founders, Gordon Bowker and Paul Shipman, had a vision to bring Seattle a better beer than the light yellow fizzy stuff that was widely available at the time. Seizing upon the progressive energy of other pioneering Emerald City brands, the two established Seattle’s Redhook Ale Brewery.  From modest beginnings in an old transmission shop in the Ballard neighborhood, to a former trolley car barn in Fremont, Redhook has always embodied the spirit of Seattle. After 35 years, Seattle’s Original Craft Brewery is still brewing fresh, innovative craft beers for the new generations of beer lovers.",
-        region: "capital hill",
+        region: "Capital hill",
         latitude: "47.6142588",
         longitude: "-122.3227889",
         googleMapsLink: "https://goo.gl/maps/Ba7uCtnjFwtYYvYv8"
@@ -267,7 +266,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We're a small microbrewery on 12th Ave in the heart of Capitol Hill. All of our carefully crafted beers are brewed on-site and rotate quickly, so stop in for a pint and see what's new!",
-        region: "capital hill",
+        region: "Capital hill",
         latitude: "47.618026",
         longitude: "-122.3167202",
         googleMapsLink: "https://goo.gl/maps/fa36haLnqcKS23Qm7"
@@ -281,7 +280,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Optimism drives everything we do—how we work, engage with our customers and treat our employees. We want to promote optimism and celebrate optimists, because they are the ones who improve the world. We can’t cure cancer or fix homelessness, but we can make beer for those who are trying and use beer to do good. Plus optimists have more fun.",
-        region: "capital hill",
+        region: "Capital hill",
         latitude: "47.6127711",
         longitude: "-122.3206043",
         googleMapsLink: "https://goo.gl/maps/r5Gd2szHVuNC4Qc76"
@@ -295,7 +294,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "The oddly named Six Arms is not so oddly named when you consider our beer-label logo showing a Hindu idol with her six, sinuous arms aloft. Inside the bustling pub, enormous windows and an impressive three-dimensional sculpture of our multi-armed mascot make Six Arms a destination for Seattle's funky Capitol Hill neighborhood. Filled with a long wooden bar, booths, an upstairs section with wrought-iron café tables and mini booth, the pub also boasts McMenamins' largest collection of chandeliers. Pretty, aren't they? Nestled on Pike Street halfway between Capitol Hill and downtown shopping, the airy pub features daily specials, a menu of classic pub fare and handcrafted ales brewed right on site.",
-        region: "capital hill",
+        region: "Capital hill",
         latitude: "47.6140632",
         longitude: "-122.3278715",
         googleMapsLink: "https://goo.gl/maps/EE8czxFQyVYD5Vrj8"
@@ -309,7 +308,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We now serve our beers alongside a well curated selection of liquor and delicious sandwiches! As such, we are now 21+ and due to health department requirements, we do not allow pets.",
-        region: "central ditrict",
+        region: "Central ditrict",
         latitude: "47.5993973",
         longitude: "-122.2998104",
         googleMapsLink: "https://goo.gl/maps/Qi7ECBHNcQQD1bJx8"
@@ -323,7 +322,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "If you’ve been to Seattle’s Pike Place Market, you’ve watched fish fly, you’ve fed a bronze pig named Rachel, you’ve shopped endless rows of crafts, flowers and food, you’ve gazed out at Elliott Bay. And you probably got a little thirsty. At Old Stove Brewery, we are serving Market-made craft beer and delicious fare. Come check out our new MarketFront location at 1901 Western Avenue in downtown Seattle!",
-        region: "downtown",
+        region: "Belltown",
         latitude: "47.6096578",
         longitude: "-122.3431512",
         googleMapsLink: "https://goo.gl/maps/4u3aCSoTY9se9F5EA"
@@ -351,7 +350,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Fremont Brewing was born of our love for our home and history as well as the desire to prove that beer made with the finest local ingredients – organic when possible – is not the wave of the future but the doorway to beer's history. Starting a brewery in the midst of the Great Recession is clearly an act of passion. We invite you to come along with us and enjoy that passion … Because Beer Matters.",
-        region: "fremont",
+        region: "Fremont",
         latitude: "47.6490453",
         longitude: "-122.3445256",
         googleMapsLink: "https://goo.gl/maps/i4uKSWQzBfk5KJMf7"
@@ -365,7 +364,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We are a very small-scale brewery and pub specializing in foreign and unique beers and eats.  Our brewery is a 3.5 barrel system which we use to create hand-crafted, more often than not, specialty ales.  Our brewery is based around experimentation, so our taps change frequently.  We usually do not brew the same beer twice, but will do so if enough people ask.",
-        region: "fremont",
+        region: "Fremont",
         latitude: "47.6522673",
         longitude: "-122.3556526",
         googleMapsLink: "https://goo.gl/maps/rV6LHEXeocg2k8Ey9"
@@ -379,7 +378,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Manny asked me to write up a history of the brewery for the website. In general, I find history pieces really boring. It’s always the same kind of thing about how the founders loved beer so much, they decided to quit their boring insurance jobs where they couldn’t drink beer for a living, and dedicate their lives to brewing well crafted beers. First of all, everyone loves beer. Even if you don’t, you know someone that does. Second, everyone hates their boring jobs and wishes they could drink beer for work. Third, no one sets out to intentionally make bad beer, even at Strangebrew in Port Townsend. Instead, I wrote a really impassioned think piece about growlers, how the growth of our growler program mirrored the history of the company. It was really clever. Or brave. Or meta. I thought it was good. And I’m pretty sure I didn’t mention cats once. But Manny wanted something more along the lines about how he and Roger met over their love of ultimate frisbee (aka, beer drinking) and wanted to start a business together because they hated working for The Man and they actually wanted to open up a cat food company. Just kidding, they wanted to start a brewery. Literally: they loved beer, quit an insurance job (that was Roger, Manny may or may not have been employed at the time) and wanted to make really good beer. You know, boring.",
-        region: "georgetown",
+        region: "Georgetown",
         latitude: "47.5551783",
         longitude: "-122.3260962",
         googleMapsLink: "https://goo.gl/maps/8RjYvFC5R8SB9e2k7"
@@ -393,7 +392,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Our beer is currently distributed throughout Seattle and Tacoma on draft and at our Georgetown Taproom. We currently do not package our products.",
-        region: "georgetown",
+        region: "Georgetown",
         latitude: "47.5478942",
         longitude: "-122.3149656",
         googleMapsLink: "https://goo.gl/maps/H4YcJev5yXaxQivW9"
@@ -406,7 +405,7 @@ const brewerySeed = [
         phoneNumber: "(206) 453-3615",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Counterbalance Brewing Description",
-        region: "georgetown",
+        region: "Georgetown",
         latitude: "47.5453508",
         longitude: "-122.3281224",
         googleMapsLink: "https://goo.gl/maps/Lijs3Fu9q2innNz67"
@@ -419,7 +418,7 @@ const brewerySeed = [
         phoneNumber: "(206) 729-5350",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Lantern Brewing Description",
-        region: "greenwood",
+        region: "Greenwood",
         latitude: "47.698082",
         longitude: "-122.345771",
         googleMapsLink: "https://goo.gl/maps/jw1jMoaZ3VsdvNW79"
@@ -433,7 +432,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Flying Bike is a democratically run, member-owned and operated cooperative in Seattle’s Greenwood neighborhood. We strive to make Flying Bike Cooperative Brewery membership and activities welcoming and accessible to all members of our diverse community.",
-        region: "greenwood",
+        region: "Greenwood",
         latitude: "47.6920756",
         longitude: "-122.3551867",
         googleMapsLink: "https://goo.gl/maps/TcckE32idpM4vCgdA"
@@ -460,7 +459,7 @@ const brewerySeed = [
         phoneNumber: "(425) 949-5295",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Cairn Brewing Description",
-        region: "kenmore",
+        region: "Kenmore",
         latitude: "47.7571452",
         longitude: "-122.2441304",
         googleMapsLink: "https://goo.gl/maps/sxunQ9xgBaVsfYKE6"
@@ -488,7 +487,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Inspired by the active outdoor lifestyle of the Pacific Northwest and situated alongside Kirkland's brand new bicycle corridor, our goal is to provide the Seattle area with the finest locally-made Northwest style Ales and Lagers. Look for us in local restaurants and craft beer establishments around Seattle, or check us out in person.",
-        region: "kirkland",
+        region: "Kirkland",
         latitude: "47.6717337",
         longitude: "-122.1968692",
         googleMapsLink: "https://goo.gl/maps/1MVZ9qqZLjhJQBPh8"
@@ -502,7 +501,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We are located right on the Burke-Gilman trail, have off-street parking, and ample bike parking. Our taproom has plenty of indoor and outdoor seating. We don't have a kitchen, but you're welcome to bring in food from one of our great neighboring restaurants or even your own picnic basket. ",
-        region: "laurelhurst",
+        region: "Laurelhurst",
         latitude: "47.6614526",
         longitude: "-122.2881614",
         googleMapsLink: "https://goo.gl/maps/hokPd9cwmcCV7sPv6"
@@ -516,7 +515,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "At Figurehead Brewing Company we have a passion for brewing great beer and a love for sharing our beer with others.  Our goal is to create a welcoming, non-pretentious place where our neighbors can learn about and enjoy simple, honest, straightforward, quality beer. Our beers are focused on showcasing all the ingredients that go into beer, especially malt and yeast which sometimes get overshadowed by aggressive hopping.  Don’t get us wrong, we love hops and we always have a couple IPAs on tap, but we also have lots of English and Belgian inspired ales.  All of our beers are well balanced and highly drinkable because we want to be your neighborhood brewery and we want to see you on a regular basis. Stop by our taproom located next to Fishermen's Terminal, have a pint while you check out our 7 barrel brewhouse, or grab a seat in our outdoor beergarden with views of the boats.",
-        region: "magnolia",
+        region: "Magnolia",
         latitude: "47.6560946",
         longitude: "-122.3839744",
         googleMapsLink: "https://goo.gl/maps/3yf9VkQPeeCxramx8"
@@ -530,7 +529,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We’re a small craft brewery located in the Magnolia neighborhood of Seattle. We have an eclectic focus on creating beer and strive constantly for innovation. You may not see the same beer every time you visit but we try to utilize fresh ingredients, complex yeast strains, and interesting hop profiles. We were founded on the principles of creating something as a family. Working together to make beer that represents who we are, and what we love. We may not all be related, but family is what you make it.",
-        region: "magnolia",
+        region: "Magnolia",
         latitude: "47.6606108",
         longitude: "-122.3903752",
         googleMapsLink: "https://goo.gl/maps/b7P6a4Yrshbd44Ux8"
@@ -544,7 +543,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Elliott Bay Brewing Co. is a family-owned company of high-quality neighborhood brewpubs in communities throughout the Seattle metro area.  Our two owners, Todd Carden and Brent Norton, met in 1994 while working for the iconic Maritime Pacific Brewing Company in Ballard. They forged a friendship and explored their common goal and dream of owning and operating their own brewpub. In November 1996 they signed their first lease and began construction of a brewpub in the historic “Junction” of West Seattle.  They opened the Elliott Bay Brewery and Pub for business on July 11, 1997.",
-        region: "north seattle",
+        region: "North seattle",
         latitude: "47.7202356",
         longitude: "-122.2958166",
         googleMapsLink: "https://goo.gl/maps/nAV2hRWoFLVRye8Y8"
@@ -558,7 +557,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Elliott Bay Brewing Co. is a family-owned company of high-quality neighborhood brewpubs in communities throughout the Seattle metro area.  Our two owners, Todd Carden and Brent Norton, met in 1994 while working for the iconic Maritime Pacific Brewing Company in Ballard. They forged a friendship and explored their common goal and dream of owning and operating their own brewpub. In November 1996 they signed their first lease and began construction of a brewpub in the historic “Junction” of West Seattle.  They opened the Elliott Bay Brewery and Pub for business on July 11, 1997.",
-        region: "???",
+        region: "Burien",
         latitude: "47.4665493",
         longitude: "-122.3389162",
         googleMapsLink: "https://goo.gl/maps/RfBQ45UM6NMBP9K66"
@@ -572,7 +571,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Elliott Bay Brewing Co. is a family-owned company of high-quality neighborhood brewpubs in communities throughout the Seattle metro area.  Our two owners, Todd Carden and Brent Norton, met in 1994 while working for the iconic Maritime Pacific Brewing Company in Ballard. They forged a friendship and explored their common goal and dream of owning and operating their own brewpub. In November 1996 they signed their first lease and began construction of a brewpub in the historic “Junction” of West Seattle.  They opened the Elliott Bay Brewery and Pub for business on July 11, 1997.",
-        region: "west seattle",
+        region: "West seattle",
         latitude: "47.5603809",
         longitude: "-122.3865007",
         googleMapsLink: "https://goo.gl/maps/c4ShN7DYLSrqNzyg8"
@@ -586,7 +585,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Hellbent started with three of us - Jack Guinn, Chris Giles and Randy Embernate - longtime friends and restaurant industry veterans. For us, starting Hellbent was the natural (and the coolest) thing to do, growing directly out of our experience and our love of beer. For years we home-brewed and toiled over our business plan. Then, we met Brian Young - award winning brewer, co-owner and fast friend - who turned out to be the missing link. Within a couple months, we were on the hunt for the perfect location. We wanted our brewery in Lake City, where Chris and Jack already called home, to contribute to the growing beer scene here. When we stepped into the old CM Hopkins building for the first time, we knew we had found our venue. Starting right away, we gutted it and began the transformation, building with reclaimed wood, steel, good humor, and a fair amount of muscle. Finally, after years of fierce determination and hard work (including seven months of construction), we opened our doors in the thick of microbrew country. We didn’t do this alone. We are humbled by the support and kindness of our friends and family that helped us along the way. So, to our beer-loving brothers and sisters of the Pacific Northwest, cheers and welcome to Hellbent!",
-        region: "north seattle",
+        region: "North seattle",
         latitude: "47.7239391",
         longitude: "-122.2933138",
         googleMapsLink: "https://goo.gl/maps/rKdULtrk6ds16UQH9"
@@ -599,7 +598,7 @@ const brewerySeed = [
         phoneNumber: "(xxx) xxx-xxxx",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Monka Brewing Description",
-        region: "shoreline",
+        region: "Shoreline",
         latitude: "47.754424",
         longitude: "-122.313698",
         googleMapsLink: "https://goo.gl/maps/7aRJWEmZaw1zZ45q6"
@@ -626,7 +625,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "In 1984, our founders were inspired to discover a new way of crafting beer, bringing together adventure, friends and bold new flavors and innovation. Their pioneering spirit gave the PAC Northwest the groundbreaking, highly hopped Pyramid Pale Ale—a beer well ahead of its time—as well as many others that have withstood the test of time. Today, we share this spirit of with you. Adventures, no matter the size, are planned and celebrated over great beers. Where will you find your Pyramid? The time to explore is now.",
-        region: "pioneer square",
+        region: "Pioneer square",
         latitude: "47.592006",
         longitude: "-122.334886",
         googleMapsLink: "https://goo.gl/maps/vUiRX1CRKtZkBnPx7"
@@ -639,7 +638,7 @@ const brewerySeed = [
         phoneNumber: "(206) 457-8598",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Rooftop Brewing Description",
-        region: "queen anne",
+        region: "Queen anne",
         latitude: "47.655719",
         longitude: "-122.373036",
         googleMapsLink: "https://goo.gl/maps/kWLvvandm1NRYM339"
@@ -652,7 +651,7 @@ const brewerySeed = [
         phoneNumber: "(xxx) xxx-xxxx",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Rooftop Brewing Description",
-        region: "queen anne",
+        region: "Queen anne",
         latitude: "47.630801",
         longitude: "-122.374525",
         googleMapsLink: "https://goo.gl/maps/fYfPhctkbaSJE3PR8"
@@ -665,7 +664,7 @@ const brewerySeed = [
         phoneNumber: "(206) 743-8450",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Ravenna Brewing Description",
-        region: "ravenna",
+        region: "Ravenna",
         latitude: "47.668233",
         longitude: "-122.299240",
         googleMapsLink: "https://goo.gl/maps/dFbNusc3VmWm4Hey9"
@@ -679,7 +678,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Brewery with beers made of ingredients from the Northwest, growler fills, tours & a retail store",
-        region: "redmond",
+        region: "Redmond",
         latitude: "47.663720",
         longitude: "-122.102551",
         googleMapsLink: "https://goo.gl/maps/h8wucy2tiwPf2k9z7"
@@ -693,7 +692,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We make a range of beers at Postdoc Brewing. You can expect a perfect Pacific Northwest lineup at our core, and we fill in the corners with sour and barrel aged beers. Every beer is made with a focus on delivering the best possible experience to the customer. Our taproom offers a relaxed environment, with blended natural woods and lots of reclaimed pieces throughout to create a warm, inviting location to enjoy our latest beverages. We are also kid and dog friendly - so bring them too.",
-        region: "redmond",
+        region: "Redmond",
         latitude: "47.663718",
         longitude: "-122.105345",
         googleMapsLink: "https://goo.gl/maps/tGfcSFqXVyzzhDXP6"
@@ -707,7 +706,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "As beer lovers ourselves, our mission is simple; brew beer that we want to drink. So whether you’re enjoying one of our award-winning, year-round beers or trying one of our many unique seasonal beers, you will be without a doubt, drinking delicious beer. Inspiration for our tasty beer comes from a mix of old-world styles and northwest flavor, creating new and original (did we mention delicious) beers for all of Washington to enjoy.",
-        region: "redmond",
+        region: "Redmond",
         latitude: "47.685617",
         longitude: "-122.144528",
         googleMapsLink: "https://goo.gl/maps/gEiWMosjpPLF5jU77"
@@ -720,7 +719,7 @@ const brewerySeed = [
         phoneNumber: "(425) 282-4360",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Four Generals Brewing Description",
-        region: "renton",
+        region: "Renton",
         latitude: "47.480147",
         longitude: "-122.205702",
         googleMapsLink: "https://goo.gl/maps/YX9XDF1YUt9QdE6T7"
@@ -734,7 +733,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Ghostfish Brewing Company is a brewery with a mission: to elevate gluten-free beer to the forefront of craft brewing innovation.  All three of our founders are either gluten-intolerant themselves or have loved ones who are, so we are acutely aware of how the craft brewing revolution has left gluten-intolerant drinkers behind.  We believe fate has brought us together to help rectify that!",
-        region: "sodo",
+        region: "Sodo",
         latitude: "47.576356",
         longitude: "-122.333984",
         googleMapsLink: "https://goo.gl/maps/yBTKt92SQeUgX7gM7"
@@ -747,7 +746,7 @@ const brewerySeed = [
         phoneNumber: "(206) 432-9734",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Schooner EXACT Description",
-        region: "sodo",
+        region: "Sodo",
         latitude: "47.567718",
         longitude: "-122.335472",
         googleMapsLink: "https://goo.gl/maps/9fw5AzpjykMpjbqc6"
@@ -761,7 +760,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Founded in 2007 by Joel VandenBrink in a 140 square foot storage unit, Two Beers Brewing Co. has been brewing and distributing beer to the Pacific Northwest for over a decade. Dedicated to crafting delicious, creative beers with quality Northwest ingredients, Two Beers Brewing is distributed throughout Washington, Oregon, Alaska and Idaho. Visit The Woods tasting room in SoDO (4660 Ohio Ave S. 98134) for a full line up of draft and package product from Two Beers Brewing, Seattle Cider Company, and Sound Craft Seltzer Co.",
-        region: "sodo",
+        region: "Sodo",
         latitude: "47.560553",
         longitude: "-122.337501",
         googleMapsLink: "https://goo.gl/maps/hutTQqF51dDU7hw88"
@@ -775,7 +774,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Seapine Brewing Company was founded in Seattle’s Industrial District in the year 2011. Form our inception the goal has been to bring the highest quality ales and lagers to the Pacific Northwest. The recognition of responsibility to continue and further Seattle’s brewing history is Seapine’s ethos. Our background in brewing science and our years of experience guide us everyday on the quest for perfection in every pint.",
-        region: "sodo",
+        region: "Sodo",
         latitude: "47.576034",
         longitude: "-122.335515",
         googleMapsLink: "https://goo.gl/maps/1zWeaQQpVf662SPK7"
@@ -803,7 +802,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Les McAuliffe has been brewing award-winning beer since 1998.  His passion for Belgian ales is at the center of his beer making.  We are serving up 12 beers, ales, ciders and mead on tap as well as mouthwatering savory servings perfectly paired with beer. Perihelion Brewery opened February 2016 at the crest of Beacon Hill, close to light rail",
-        region: "south seattle",
+        region: "South seattle",
         latitude: "47.578471",
         longitude: "-122.311862",
         googleMapsLink: "https://goo.gl/maps/tktZGHeZNx1cYm4R8"
@@ -817,7 +816,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Fly fishing and microbrew: two passions that meld together beautifully. Whether swinging a fly or freshening a microbrew in the river, each brings up a requirement for the other. Today, I have infused the lure of a cool river and patience for the big catch into FlyCaster Brewing Co., transferring my dedicated techniques from one passion to the other.",
-        region: "kirkland",
+        region: "Kirkland",
         latitude: "47.710402",
         longitude: "-122.169251",
         googleMapsLink: "https://goo.gl/maps/QjGT68V8mKAnduAi7"
@@ -831,7 +830,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Scott developed an appreciation for craft beer and shiny metal objects while studying mechanical engineering at the University of Washington. At some point in time, he inherited a starter homebrew kit. Over the next nineteen years, simple extract brewing gradually evolved batch by batch into an all-grain nano brewery. With no room left in the garage, the car was forced to sleep outside.  When even that wasn't enough, Scott attended brewer's training at the American Brewer's Guild, and started down the road of opening a craft brewery in Kirkland.",
-        region: "kirkland",
+        region: "Kirkland",
         latitude: "47.699153",
         longitude: "-122.180925",
         googleMapsLink: "https://goo.gl/maps/5d75DfZvChqGjWYeA"
@@ -845,7 +844,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Many long-time Seattleites will recognize our building as the one-time home of the esteemed Rainbow Tavern. Come drink a beer where legendary musicians like Soundgarden, the Ramones, Bo Diddley, George Thorogood, Heart, Jimmy Page, and more once played.",
-        region: "university district",
+        region: "University district",
         latitude: "47.661483",
         longitude: "-122.319792",
         googleMapsLink: "https://goo.gl/maps/UBpSsc9WGcKVQVzn9"
@@ -859,7 +858,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Big Time Brewery opened its doors in December 8th, 1988 and we have been brewing and serving craft beer ever since. We are Seattle's original brew pub. A classic American Alehouse located in an old yellow brick building with high ceilings and lots of stained wood. The pub has an antique bar, numerous historical brewery photographs, and lots of old beer signs and trays.",
-        region: "university district",
+        region: "University district",
         latitude: "47.657850",
         longitude: "-122.313495",
         googleMapsLink: "https://goo.gl/maps/exiVa9F4Drqj2MXM8"
@@ -872,7 +871,7 @@ const brewerySeed = [
         phoneNumber: "(206) 708-6627",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "West Seattle Brewing Company Description",
-        region: "west seattle",
+        region: "West seattle",
         latitude: "47.5643016",
         longitude: "-122.3777123",
         googleMapsLink: "https://goo.gl/maps/Qjjr6oWZ3Ym14wFe7"
@@ -885,7 +884,7 @@ const brewerySeed = [
         phoneNumber: "(206) 708-6627",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "West Seattle Brewing Company Description",
-        region: "west seattle",
+        region: "West seattle",
         latitude: "47.580293",
         longitude: "-122.406730",
         googleMapsLink: "https://goo.gl/maps/Chrevb5xj7eYmfmA6"
@@ -899,7 +898,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Metier Brewing Company is a family and bike-friendly destination in the heart of Woodinville, featuring distinctive award-winning beers, local cider, and our own in-house nitro brewed coffee. MBC is all about building community and offering a welcoming gathering space for families, friends, and those who appreciate well-crafted beer. Our spacious beer hall, cozy taproom, and ample parking spaces make for a great event location!",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.7639993",
         longitude: "-122.1508451",
         googleMapsLink: "https://goo.gl/maps/uxXEExSdjhw8aTTa8"
@@ -927,7 +926,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Our goal is simple: Make better beer that’s inspired by our outdoor lifestyle. A good beer should be on hand not only at the brass rail of the local tavern, but also in board bags, backpacks, fishing vests, and coolers at the tailgate. We do our part to help protect the world in which we love to play by imbibing responsibly, supporting environmental non-profits, recapturing water from the brewing process, sourcing renewable energy, repurposing spent grain into animal feed, and building energy-efficient breweries. Please do yours.",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.7678258",
         longitude: "-122.1518234",
         googleMapsLink: "https://goo.gl/maps/1vdN6SGEqsvYBmK9A"
@@ -941,7 +940,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "We are a Craft Brewery, and as such, we are not subject to mass production of watered down cereal. We take pride in each and every ingredient we put into our beer. We care, we live, and we share the spoils of our desires. When we are successful, our friends are among us to reap the benefit. As we grow, we want to grow prudently, with honor.",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.769222",
         longitude: "-122.1457058",
         googleMapsLink: "https://goo.gl/maps/kj6wKEgysMLWQTBt7"
@@ -954,7 +953,7 @@ const brewerySeed = [
         phoneNumber: "(425) 419-4782",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Bosk Brew Works Description",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.7684652",
         longitude: "-122.1491759",
         googleMapsLink: "https://goo.gl/maps/QUonrL4yD7dHBaR36"
@@ -967,7 +966,7 @@ const brewerySeed = [
         phoneNumber: "(206) 494-5968",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Locust Cider Description",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.7662046",
         longitude: "-122.1486501",
         googleMapsLink: "https://goo.gl/maps/UGfzCgvmETRCEhLx8"
@@ -980,7 +979,7 @@ const brewerySeed = [
         phoneNumber: "(206) 494-5968",
         photoUrl: "http://via.placeholder.com/600x400",
         description: "Locust Cider Description",
-        region: "ballard",
+        region: "Ballard",
         latitude: "47.667052",
         longitude: "-122.3850951",
         googleMapsLink: "https://goo.gl/maps/rBBSrp5K2SQ1xWPv8"
@@ -994,7 +993,7 @@ const brewerySeed = [
         photoUrl: "http://via.placeholder.com/600x400",
         description:
             "Sumerian's were the first brewers in histroy, dating back over 6,000 years ago.  We use the name in honor of the incredible length of time this world changin beverage has been around.",
-        region: "woodinville",
+        region: "Woodinville",
         latitude: "47.7399777",
         longitude: "-122.1538746",
         googleMapsLink: "https://goo.gl/maps/qWDY85BKXub6Juw48"
