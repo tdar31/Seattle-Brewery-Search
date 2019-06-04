@@ -16,12 +16,12 @@ class Cards extends Component {
                     {
                         brewData: res.data
                     },
-                    function() {
-                        console.log(
-                            "this.state.brewData: ",
-                            this.state.brewData
-                        );
-                    }
+                    // function() {
+                    //     console.log(
+                    //         "this.state.brewData: ",
+                    //         this.state.brewData
+                    //     );
+                    // }
                 );
             })
             .catch(err => console.log(err));
@@ -37,9 +37,8 @@ class Cards extends Component {
                         <BreweryCard
                             key={index}
                             breweryName={breweryData.name}
-                            // brewIcon={breweryData.}
-                            // breweryGMaps={breweryData.}
                             breweryWebsite={breweryData.website}
+                            breweryGMaps={breweryData.googleMapsLink}
                         />
                     ))}
                 </div>

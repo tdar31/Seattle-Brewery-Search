@@ -4,7 +4,6 @@ import "./style.css";
 import API from "../utils/API";
 import GoogleMapReact from "google-map-react";
 import Marker from "../components/Marker/Marker.js";
-import FilterButtons from "../components/FilterButtons";
 
 class Map extends Component {
     static defaultProps = {
@@ -12,7 +11,7 @@ class Map extends Component {
             lat: 47.6062,
             lng: -122.3321
         },
-        zoom: 13
+        zoom: 14
     };
 
     state = {
@@ -40,30 +39,16 @@ class Map extends Component {
         return (
             <div>
                 <Nav />
-                {/* <div className="sideSpace" /> */}
                 <div className="mapContainer">
-                    {/* {this.state.brewData.map((breweryData, index) => (
-                        <FilterButtons
-                            key={index}
-                            breweryRegion={breweryData.region}
-                        />
-                    ))} */}
                     <GoogleMapReact
-                        bootstrapURLKeys={
-                            {
-                                // key: "AIzaSyDX6dNHTuVmhjdNOpff1FQk500tcdpQ1Eo"
-                                // No this is not a mistake.  The API key is suppose to be exposed. You cannot use enviroment variables to hide it
-                                // https://stackoverflow.com/questions/1364858/what-steps-should-i-take-to-protect-my-google-maps-api-key
-                            }
-                        }
+                        bootstrapURLKeys={{
+                            key: "AIzaSyDX6dNHTuVmhjdNOpff1FQk500tcdpQ1Eo"
+                            // No this is not a mistake.  The API key is suppose to be exposed. You cannot use enviroment variables to hide it
+                            // https://stackoverflow.com/questions/1364858/what-steps-should-i-take-to-protect-my-google-maps-api-key
+                        }}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
-                        {/* <Marker
-                            lat={"47.580335"}
-                            lng={"-122.406805"}
-                            text="Pedfdsafsddler"
-                        /> */}
                         {this.state.brewData.map((breweryData, index) => (
                             <Marker
                                 key={index}
@@ -71,23 +56,11 @@ class Map extends Component {
                                 lat={breweryData.latitude}
                                 lng={breweryData.longitude}
                                 breweryWebsite={breweryData.website}
+                                breweryGoogle={breweryData.googleMapsLink}
                             />
                         ))}
                     </GoogleMapReact>
                 </div>
-                {/* <div className="brewCardContainer">
-                    {this.state.brewData.map((breweryData, index) => (
-                        <MapBrewCard
-                            key={index}
-                            breweryName={breweryData.name}
-                            // brewIcon={breweryData.}
-                            // breweryGMaps={breweryData.}
-                            breweryWebsite={breweryData.website}
-                        />
-                    ))}
-                </div> */}
-
-                {/* <div className="sideSpace" /> */}
             </div>
         );
     }

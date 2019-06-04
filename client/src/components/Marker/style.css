@@ -8,9 +8,9 @@
     width: 135px;
     padding: 15px;
     position: relative;
-    -moz-box-shadow: 0 0 4px #222222;
-    -webkit-box-shadow: 0 0 4px #222222;
-    box-shadow: 0 0 4px #222222;
+    -moz-box-shadow: 5px 5px 5px -5px #222222;
+    -webkit-box-shadow: 5px 5px 5px -5px #222222;
+    box-shadow: 5px 5px 5px -5px #222222;
 }
 
 .bubbleText {
@@ -26,6 +26,7 @@
     content: "";
     position: absolute;
     left: -0px;
+    /* background-image: linear-gradient(red, yellow); */
 }
 
 .gMapsBubbleLogo {

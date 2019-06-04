@@ -15,7 +15,7 @@
     position: fixed;
     display: inline-block;
     z-index: 2;
-    margin-left: 70vw;
+    margin-left: 64vw;
     margin-top: 30px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .descriptionText {
-    margin-top: 63vh;
+    margin-top: 60vh;
     margin-left: 30vw;
     font-weight: bold;
     text-align: center;
@@ -132,9 +132,18 @@
     .beer {
         margin-left: 10vw;
     }
+    .navContainer {
+        margin-left: 62vw;
+    }
+    .navLink {
+        margin: 0px 0px 0px 10px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
+    .seattleBrewSearch {
+        visibility: hidden;
+    }
     .seattleBrewSearch {
         font-size: 26px;
         margin-left: 23vw;
@@ -143,10 +152,13 @@
         margin-left: 8vw;
     }
     .navContainer {
-        margin-left: 65vw;
+        margin-left: 60vw;
     }
     .welcomeText {
         font-size: 36px;
+    }
+    .navLink {
+        margin: 0px 0px 0px 5px;
     }
 }
 
@@ -155,7 +167,7 @@
         visibility: hidden;
     }
     .navContainer {
-        margin-left: 50vw;
+        margin-left: 45vw;
     }
 }
 
@@ -164,7 +176,7 @@
         visibility: hidden;
     }
     .navContainer {
-        margin-left: 45vw;
+        margin-left: 40vw;
     }
     .welcomeText {
         font-size: 32px;
@@ -176,7 +188,7 @@
         visibility: hidden;
     }
     .navContainer {
-        margin-left: 40vw;
+        margin-left: 35vw;
     }
     .welcomeText {
         font-size: 28px;
