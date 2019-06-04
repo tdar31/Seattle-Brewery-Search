@@ -1,5 +1,7 @@
 # Seattle-Brewery-Search
 
+http://www.seattlebrewerysearch.com/
+
 Seattle Brewery Search is a site that provides an interactive map that shows the locations of all the breweries in the greater Seattle area.
 
 Features that I plan to add
