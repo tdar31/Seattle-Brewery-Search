@@ -2,7 +2,7 @@
 
 http://www.seattlebrewerysearch.com/
 
-Seattle Brewery Search is a site that provides an interactive map that shows the locations of all the breweries in thegreater Seattle area.  The site uses the Google Maps API to generate the interactive map with custom markers foreach brewery.
+Seattle Brewery Search is a site that provides an interactive map that shows the locations of all the breweries in the greater Seattle area.  The site uses the Google Maps API to generate the interactive map with custom markers foreach brewery.
 
 Features that I plan to add
 
