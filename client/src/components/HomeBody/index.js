@@ -40,14 +40,6 @@ class HomeBody extends Component {
                     <Link to="/cards">
                         <a className="navLink">Card View</a>
                     </Link>
-
-                    {/* <a
-                        className="navLink loginTab"
-                        href="https://github.com/tdar31/Seattle-Brewery-Search"
-                        target="_blank"
-                    >
-                        Github
-                    </a> */}
                 </div>
                 <div className="particleContainer">
                     <Particles
