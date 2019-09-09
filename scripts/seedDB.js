@@ -5,8 +5,6 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/seattle-brewery-searchDB"
 );
 
-// ADD ELYSIAN REEE
-
 const brewerySeed = [
     {
         name: "Rueben's Brewery",
